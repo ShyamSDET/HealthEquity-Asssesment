@@ -1,0 +1,56 @@
+1. Introduction
+    This document is a test plan for ‘Health equity assessment project’. It lists the test cases created for this project.
+
+2  Test Objectives
+    The objective to cover the entire functional flow of the application within 5 test cases.
+
+3  Scope 
+      OS : windows 10
+      Browser : Google Chrome, Microsoft Edge & Mozilla Firefox
+
+4  Number of Test cases Identified
+    To cover maximum UI and functionality of the application 3 testcase are identified.
+
+5  Architecture
+    The test cases are created to run on localhost with framework built on top of the following – Cypress, BDD, POM, Typescript, GitHub & Visual studio code.
+
+6  Test cases functionality
+        Test case 1 : Header and page components
+            Steps: Expected
+            1.	Launch web application on browser: User should see home page
+            2.	Check page title: Page title should be ‘HqySdetProject’
+            3.	Verify Each button text: Buttons Text should be ‘@Terminal Message’
+            4.	Verify ‘+’ icon is for each button: user should ‘+’ before each button text
+            5.	Verify initial terminal message: Terminal message should be ‘ng generate component xyz’
+
+        @Terminal Message = ["ng generate component xyz", "ng add @angular/material", "ng add @angular/pwa", "ng add _____", "ng test", "ng build --prod"];
+
+        Test case 2 : Happy Path-Verify command or message in teminal for each button click 
+            Steps: Expected
+            1.	Launch web application on browser: User should see home page
+            2.	Check page title: Page title should be ‘HqySdetProject’
+            3.	Click on ‘@ButtonText’ Button: User should be able to click on the ‘@ButtonText’ button
+            4.	Verify terminal message after clicking on button: Terminal message should be ‘@TerminalMessage’
+
+        @Terminal Message = ["ng generate component xyz", "ng add @angular/material", "ng add @angular/pwa", "ng add _____", "ng test", "ng build --prod"]
+        @ButtonsTest = ["New Component", "Angular Material", "Add PWA Support", "Add Dependency", "Run and Watch Tests", "Build for Production"]
+        
+        Note: Repeat step 3 (click in sequential order) and 4 for all buttons
+
+        Test case 3 : Alternate flow-Verify command or message in teminal for each random button click 
+            Steps: Expected
+            1.	Launch web application on browser: User should see home page
+            2.	Check page title: Page title should be ‘HqySdetProject’
+            3.	Click on ‘@ButtonText’ Button: User should be able to click on the ‘@ButtonText’ button
+            4.	Verify terminal message after clicking on button: Terminal message should be ‘@TerminalMessage’
+        
+        @Terminal Message = ["ng generate component xyz", "ng add @angular/material", "ng add @angular/pwa", "ng add _____", "ng test", "ng build --prod"]
+        @ButtonsTest = ["New Component", "Angular Material", "Add PWA Support", "Add Dependency", "Run and Watch Tests", "Build for Production"]
+        
+        Note: Repeat step 3 (click on random buttons) and 4 for all buttons
+
+
+
+
+
+
